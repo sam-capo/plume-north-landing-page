@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Page metadata, visual styles, and EmailJS setup for hero sign-ups -->
+    <title>Plume North Conservation</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Birds are disappearing at an alarming rate. Support Plume North Conservation to provide immediate protection for threatened avian species. Your contribution saves lives—donate now to make a difference.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+        publicKey: "AUOTQYebwqQ5j7vrH",
+        });
+    })();
+    </script>
+</head>
+
+<body>
+
+    <!-- Campaign hero with migration offer and primary email sign-up -->
+    <div class="home-hero">
+        <div class="hero-img">
+            <img src="imgs/barn-swallow.jpg" alt="Barn swallow resting on a wire.">
+        </div>
+        <div class="hero-text">
+            <span class="urgency-badge">Spring Migration Match: 2X Impact Until May 31</span>
+            <h1>Save Ontario’s Vanishing Birds Before Migration</h1>
+            <p>North America has lost nearly 3 billion birds. Every sign-up unlocks $5 in matching habitat funds—at zero cost to you.</p>
+            
+            <form class="hero-newsletter" id="hero-form">
+                <input type="email" id="hero-email" placeholder="Enter your email address" required>
+                <button type="button" class="btn" onclick="sendEmail()">Unlock $5 Match &rarr;</button>
+            </form>
+
+            <!-- Confirmation shown after the hero sign-up succeeds -->
+            <div id="hero-thank-you" class="thank-you-msg" hidden>
+                <strong>Thank you!</strong> You’ve unlocked $5 in matching habitat funds. Check your inbox for your welcome guide and migration updates.
+            </div>
+        </div>
+    </div>
+
+    <!-- Main conservation information and bird population evidence -->
+    <div class="main">
+        <!-- Organization overview, conservation actions, and donation impact -->
+        <div class="home-about">
+            <div class="home-about-text">
+                <h2>Direct Action for Ontario Wildlife</h2>
+                <p>Plume North Conservation turns scientific research into immediate habitat protection across the Canadian Shield and Ontario wetlands.</p>
+                <ul>
+                    <li><strong>Restore:</strong> Rebuilding critical breeding and stopover grounds.</li>
+                    <li><strong>Partner:</strong> Working directly with local landowners and researchers.</li>
+                    <li><strong>Protect:</strong> Safeguarding at-risk species like the Barn Swallow.</li>
+                </ul>
+                <div class="home-about-stats">
+                    <div class="home-about-stats-icon"><h4>90%</h4></div>
+                    <p>of every dollar goes directly to on-the-ground conservation.</p>
+                </div>
+            </div>
+            <div class="home-about-img">
+                <img src="imgs/bird-house.jpg" alt="Weathered wooden birdhouse on a tree trunk in soft sunlight">
+            </div>
+        </div>
+
+        <!-- Bird population trends and supporting conservation context -->
+        <div class="graph">
+            <div class="graph-img">
+                <img src="imgs/trends-graph.jpg" alt="Line graph showing bird population trends from 1970 to 2020, with grassland birds declining by 43%">
+            </div>
+            <div class="graph-text">
+                <h2>29% of North American Birds Are Gone</h2>
+                <p>Cornell Lab of Ornithology data shows a steep decline across common and rare species alike—including a <strong>43% drop in grassland birds</strong>.</p>
+                <p>Targeted conservation works, as seen in recovering waterfowl populations. Help us reverse the trend in Ontario before nesting season begins.</p>
+                <p><small>† Shorebirds indicator trend data has not been updated since 2019.</small></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer newsletter, site navigation, contact details, and map -->
+    <div class="footer">
+        <div class="flex-footer">
+            <div>
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter for more information.</p>
+                <form>
+                    <input type="text" class="email" placeholder="Email">
+                    <a href="#">Subscribe</a>
+                </form>
+            </div>
+
+            <div>
+                <h4>Navigation</h4>
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Species at Risk</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Donate</a></li>
+                </ol>
+            </div>
+
+            <div>
+                <h4>Address</h4>
+                <p>586 Baker Street</p>
+                <p>London, Ontario</p>
+                <p>N0N 0N0</p>
+                <p>(519) 719-3473</p>
+                <p>info@plumenorth.org</p>
+            </div>
+
+            <div>
+                <h4>Map</h4>
+                <div class="map-overflow">
+                    <img src="imgs/footer-map.png" alt="Map showing a neighborhood with schools, parks, and businesses. Key location includes 586 Baker Street, London, Ontario">
+                </div>
+            </div>
+
+        </div>
+            
+        <!-- Copyright notice and social media links -->
+        <div class="copyright-socials">
+            <p>Copyright &copy;2026 Samantha Capobianco</p>
+            <img src="imgs/instagram.svg" alt="Instagram logo, white camera outline on a dark green background.">
+            <img src="imgs/youtube.svg" alt="YouTube logo, white play button icon on a dark green background.">
+            <p>@plumenorthconservation</p>
+        </div>
+    </div>
+
+    <!-- Page interactions for navigation and newsletter forms -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
